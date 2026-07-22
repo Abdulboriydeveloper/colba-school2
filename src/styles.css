@@ -13,8 +13,15 @@
   --ink-900: #051a38;
   --ink-800: #061f46;
   --white: #ffffff;
-  --font-body: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Unbounded', var(--font-body);
+  --font-body: 'Urbanist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Urbanist', var(--font-body);
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
 }
 
 html {
