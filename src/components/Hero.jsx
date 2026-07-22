@@ -1,5 +1,5 @@
 import logoUrl from '../assets/colba-logo.png';
-import founderUrl from '../assets/doniyor-nasriddinov.jpg';
+import founderUrl from '../assets/DoniyorNasriddinov.jpg';
 
 function FloatingIcon({ variant, children }) {
   return (
@@ -33,28 +33,17 @@ export function Hero() {
         </div>
 
         <div className="hero__visual" aria-label="Doniyor Nasriddinov">
+          <svg width="0" height="0" style={{ position: 'absolute' }}>
+            <defs>
+              <clipPath id="shieldClip" clipPathUnits="objectBoundingBox">
+                <path d="M0.5,0 C0.78,0 1,0.05 1,0.05 L1,0.51 C1,0.74 0.78,0.93 0.5,1 C0.22,0.93 0,0.74 0,0.51 L0,0.05 C0,0.05 0.22,0 0.5,0 Z" />
+              </clipPath>
+            </defs>
+          </svg>
+
           <div className="logo-frame">
             <img className="founder-photo" src={founderUrl} alt="Doniyor Nasriddinov" />
           </div>
-          <FloatingIcon variant="one">
-            <path d="M5 19V5h14v14H5Z" strokeWidth="2" />
-            <path d="M8 9h8M8 13h5" strokeWidth="2" strokeLinecap="round" />
-          </FloatingIcon>
-          <FloatingIcon variant="two">
-            <path
-              d="M12 3l2.4 5 5.6.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.6-.8L12 3Z"
-              strokeWidth="2"
-              strokeLinejoin="round"
-            />
-          </FloatingIcon>
-          <FloatingIcon variant="three">
-            <path d="M8 10h8M8 14h5" strokeWidth="2" strokeLinecap="round" />
-            <path
-              d="M6 4h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 3v-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
-              strokeWidth="2"
-              strokeLinejoin="round"
-            />
-          </FloatingIcon>
         </div>
       </div>
     </section>

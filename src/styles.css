@@ -35,7 +35,7 @@ body {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  background: #f7fbf6;
+  background: #ffffff;
   color: var(--green-900);
   font-family: var(--font-body);
 }
@@ -55,7 +55,7 @@ a {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background: var(--green-300);
+  background: #ffffff;
   pointer-events: none;
 }
 
@@ -88,7 +88,7 @@ main {
 
 .hero {
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(239, 249, 233, 0.95));
+  background: #ffffff;
 }
 
 .hero__inner {
@@ -196,31 +196,31 @@ main {
   aspect-ratio: 1 / 1.08;
   overflow: hidden;
   isolation: isolate;
-  border-radius: 34% 34% 48% 48%;
-  background: linear-gradient(155deg, #b9e85d 0%, #1fb34d 48%, #078b32 100%);
-  box-shadow: 0 30px 70px rgba(25, 108, 53, 0.24);
+  clip-path: url(#shieldClip);
+  /* background:
+    repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 46px),
+    repeating-linear-gradient(-60deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 46px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0 2px, transparent 2px 46px),
+    linear-gradient(160deg, #b9e85d 0%, #1fb34d 48%, #078b32 100%);
+  box-shadow: 0 30px 70px rgba(25, 108, 53, 0.24); */
 }
 
-.logo-frame::before {
-  content: '';
+.watermark-text {
   position: absolute;
-  inset: -20px;
+  left: 50%;
+  bottom: 22%;
   z-index: 2;
-  background: url('./assets/colba-logo.png') center 42% / 82% auto no-repeat;
-  opacity: 0.13;
-  filter: brightness(0) invert(1);
-}
-
-.logo-frame::after {
-  content: 'COLBA';
-  position: absolute;
-  left: 34px;
-  bottom: 50px;
-  z-index: 3;
-  color: rgba(255, 255, 255, 0.22);
+  transform: translateX(-50%);
+  width: 90%;
+  color: rgba(255, 255, 255, 0.35);
   font-family: var(--font-display);
-  font-size: 42px;
+  font-size: clamp(16px, 2.4vw, 24px);
   font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
 }
 
 .founder-photo {
@@ -234,43 +234,6 @@ main {
   filter: saturate(1.06) contrast(1.02);
 }
 
-.float-card {
-  position: absolute;
-  z-index: 4;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 14px 34px rgba(32, 145, 70, 0.2);
-  backdrop-filter: blur(8px);
-}
-
-.float-card svg {
-  width: 34px;
-  height: 34px;
-  stroke: #1fae4b;
-}
-
-.float-card.one {
-  left: 18px;
-  top: 70px;
-  transform: rotate(-12deg);
-}
-
-.float-card.two {
-  right: 12px;
-  top: 198px;
-  transform: rotate(10deg);
-}
-
-.float-card.three {
-  right: 72px;
-  bottom: 62px;
-  transform: rotate(-8deg);
-}
 
 .guarantees {
   color: var(--white);
