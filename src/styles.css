@@ -1,3 +1,131 @@
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Thin-BF654c45255ffe0.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-ThinItalic-BF654c45268d3f9.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-ExtraLight-BF654c4525af8d.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-ExtraLightItalic-BF654c4525a5046.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Light-BF654c452608e0f.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-LightItalic-BF654c45266aa83.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Regular-BF654c45266c042.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-RegularItalic-BF654c452681c11.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Medium-BF654c45266edd1.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-MediumItalic-BF654c45267d45f.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-SemiBold-BF654c45268c340.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-SemiBoldItalic-BF654c452696350.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-BoldItalic-BF654c4525c9c27.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-Black-BF654c4525506bf.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BR Sonoma';
+  src: url('./fonts/BRSonoma-BlackItalic-BF654c45268988e.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -13,8 +141,8 @@
   --ink-900: #051a38;
   --ink-800: #061f46;
   --white: #ffffff;
-  --font-body: 'Urbanist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Urbanist', var(--font-body);
+  --font-body: 'BR Sonoma', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'BR Sonoma', var(--font-body);
   --fw-extralight: 200;
   --fw-light: 300;
   --fw-regular: 400;
@@ -93,10 +221,10 @@ main {
 
 .hero__inner {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
-  gap: 44px;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 620px);
+  gap: 36px;
   align-items: center;
 }
 
@@ -129,19 +257,19 @@ main {
 
 .landing-btn {
   width: fit-content;
-  min-width: 210px;
+  min-width: 260px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
   border-radius: 18px;
-  padding: 17px 28px;
+  padding: 20px 28px;
   background: linear-gradient(135deg, #049a38, #88ca34);
   color: var(--white);
   box-shadow: 0 16px 34px rgba(32, 145, 70, 0.26);
   cursor: pointer;
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
@@ -164,7 +292,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 26px;
   padding-top: 24px;
   border-top: 1px solid rgba(13, 59, 30, 0.12);
 }
@@ -172,7 +299,7 @@ main {
 .hero__quote p {
   margin: 0;
   color: var(--ink-800);
-  font-size: clamp(17px, 1.75vw, 24px);
+  font-size: clamp(17px, 1.45vw, 20px);
   font-weight: 800;
   line-height: 1.45;
 }
@@ -184,7 +311,7 @@ main {
 
 .hero__visual {
   position: relative;
-  min-height: 520px;
+  min-height: 640px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,17 +319,10 @@ main {
 
 .logo-frame {
   position: relative;
-  width: min(100%, 440px);
+  width: min(100%, 560px);
   aspect-ratio: 1 / 1.08;
   overflow: hidden;
   isolation: isolate;
-  clip-path: url(#shieldClip);
-  /* background:
-    repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 46px),
-    repeating-linear-gradient(-60deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 46px),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0 2px, transparent 2px 46px),
-    linear-gradient(160deg, #b9e85d 0%, #1fb34d 48%, #078b32 100%);
-  box-shadow: 0 30px 70px rgba(25, 108, 53, 0.24); */
 }
 
 .watermark-text {
@@ -917,13 +1037,13 @@ select:focus {
     font-size: 17px;
   }
 
-  .hero__visual {
-    min-height: 390px;
-  }
+ .hero__visual {
+  min-height: 440px;
+}
 
-  .logo-frame {
-    width: min(100%, 320px);
-  }
+.logo-frame {
+  width: min(100%, 360px);
+}
 
   .logo-frame::after {
     left: 24px;

@@ -1,5 +1,5 @@
 import logoUrl from '../assets/colba-logo.png';
-import founderUrl from '../assets/DoniyorNasriddinov.jpg';
+import founderUrl from '../assets/DoniyorNasriddinov.png';
 
 function FloatingIcon({ variant, children }) {
   return (
@@ -20,16 +20,18 @@ export function Hero() {
           <h1 className="hero__title">
             <span>Sog'lom muhit</span> va kafolatlangan natija
           </h1>
-          <a className="landing-btn" href="#form">
+         
+          <div className="hero__quote">
+            <strong>"Maqsadimiz - Zamonaviy dunyoda o'z so'ziga ega bo'lgan olimlarni,
+              shifokorlarni, muhandislarni yetishtirish orqali kuchli millat qurish!"
+            </strong>
+            <p>
+              COLBA Maktabining asoschisi - Doniyor Nasriddinov
+            </p>
+          </div>
+           <a className="landing-btn" href="#form">
             Ma'lumot olish
           </a>
-          <div className="hero__quote">
-            <p>
-              "Maqsadimiz - Zamonaviy dunyoda o'z so'ziga ega bo'lgan olimlarni,
-              shifokorlarni, muhandislarni yetishtirish orqali kuchli millat qurish!"
-            </p>
-            <strong>COLBA Maktabining asoschisi - Doniyor Nasriddinov</strong>
-          </div>
         </div>
 
         <div className="hero__visual" aria-label="Doniyor Nasriddinov">
